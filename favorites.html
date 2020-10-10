@@ -7,44 +7,57 @@
 </head>
 <body>
     <script>
-        let movie = 'movie1'
-        let song = 'songs1'
-        let game = 'game1'
-        let food = 'food1'
+        // ARRAY of My Favorites
+        let favorites = ['The Mask', 'I Will Survive', 'Skyrim', 'pizza' ]
+        // ARRAY of User Favorites - keep this empty
+        let uFavorites = []
 
-        let uMovie = prompt('What is your favorite movie?')
-            if (uMovie === movie)
-                alert(`Hey, That's my favorite too!`)
+        // let movie = 'movie1'
+        // let song = 'songs1'
+        // let game = 'game1'
+        // let food = 'food1'
 
-        let uSong = prompt('What is your favorite song?')
-            if (uSong === song)
+        // let uMovie = prompt('What is your favorite movie?')
+        uFavorites.push(prompt('What is your favorite movie?'))
+            if (uFavorites[0] === favorites[0]) {
                 alert(`Hey, That's my favorite too!`)
+            }
 
-        let uGame = prompt('what is your favorite game?')
-            if (uGame === game)
+        // let uSong = prompt('What is your favorite song?')
+        uFavorites.push(prompt('What is your favorite song?'))
+            if (uFavorites[1] === favorites[1]) {
                 alert(`Hey, That's my favorite too!`)
+            }
 
-        let uFood = prompt('what is your favoirte food?')
-            if (uFood === food)
+        // let uGame = prompt('what is your favorite game?')
+        uFavorites.push(prompt('what is your favorite game?'))
+            if (uFavorites[2] === favorites[2]) {
                 alert(`Hey, That's my favorite too!`)
+            }
+
+        // let uFood = prompt('what is your favoirte food?')
+        uFavorites.push(prompt('what is your favorite food?'))
+            if (uFavorites[3] === favorites[3]) {
+                alert(`Hey, That's my favorite too!`)
+            }
 
         console.log(`
         My Favorites
         ------------
-        Movies: ${movie}
-        Movies: ${song}
-        Movies: ${game}
-        Movies: ${food}
+        Movie: ${favorites[0]}
+        Song: ${favorites[1]}
+        Game: ${favorites[2]}
+        Food: ${favorites[3]}
         ------------
         `)
 
         console.log(`
         My Favorites
         ------------ 
-        Movies: ${uMovie}
-        Movies: ${uSong}
-        Movies: ${uGame}
-        Movies: ${uFood}
+        Movie: ${uFavorites[0]}
+        Song: ${uFavorites[1]}
+        Game: ${uFavorites[2]}
+        Food: ${uFavorites[3]}
         ------------
         `)
     </script>
