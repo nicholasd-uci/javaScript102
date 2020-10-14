@@ -1,0 +1,22 @@
+body {
+    background-color: lightcoral;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: limegreen;
+    padding-bottom: 10px;
+}
+h2 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#firstContainer {
+    padding-bottom: 25px;
+}
+
+#footer{
+    background-color: black;
+}
