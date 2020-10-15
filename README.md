@@ -1,5 +1,5 @@
 # javaScript102
-## CLASS MOTO : EVEN A CAT COULD DO IT!
+## CLASS MOTO : JS... SO EASY... EVEN A CAT COULD DO IT!
 ![ReadMe](./photos/ReadMe.png)
 
 ## This blog post was about understanding JavaScript
@@ -26,10 +26,6 @@
 > If our interest are the same this message will pop up
 
 ![confirmed](./photos/confirm.png)
-
-> The final page should look something like this
-
-![final touch](./photos/finaltouch.png)
 
 
 ***This is what the end result should look like***
