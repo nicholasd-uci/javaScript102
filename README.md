@@ -16,9 +16,16 @@
 ```
 
 ## Array Page 
+> In this section we went over import feature to know about console logging in the browser
 
+***Example of the page***
+![array](./photos/consolelogHello.png)
 
 ## Loops and More Page
+> In this section we went over import feature to know about For Loops and gives a console log example
+
+***Example of the page***
+![for loop](./photos/FizzBuzz.png)
 
 ## Favorite Game Page
 > In this section you play a game were I ask you about your favorite things and we see if they match with my favorite things. 
