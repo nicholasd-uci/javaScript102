@@ -4,41 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/favorite.css">
-    <title>My Favorites</title>
+    <title>JS-My Favorites</title>
 </head>
 <body>
-
-
+    <h1>Right Click on this page and go to Inspect</h1>
+    <h1>Then in the Developer Tool Bar go to Console</h1>
+    <h2>You will see my answers and yours</h2>
     <script>
         // ARRAY of My Favorites
         let favorites = ['The Mask', 'I will survive', 'skyrim', 'pizza' ]
         // ARRAY of User Favorites - keep this empty
         let uFavorites = []
 
-        // let movie = 'movie1'
-        // let song = 'songs1'
-        // let game = 'game1'
-        // let food = 'food1'
-
-        // let uMovie = prompt('What is your favorite movie?')
         uFavorites.push(prompt('What is your favorite movie?'))
             if (uFavorites[0] === favorites[0]) {
                 alert(`Hey, That's my favorite too!`)
             }
 
-        // let uSong = prompt('What is your favorite song?')
         uFavorites.push(prompt('What is your favorite song?'))
             if (uFavorites[1] === favorites[1]) {
                 alert(`Hey, That's my favorite too!`)
             }
 
-        // let uGame = prompt('what is your favorite game?')
         uFavorites.push(prompt('what is your favorite game?'))
             if (uFavorites[2] === favorites[2]) {
                 alert(`Hey, That's my favorite too!`)
             }
 
-        // let uFood = prompt('what is your favoirte food?')
         uFavorites.push(prompt('what is your favorite food?'))
             if (uFavorites[3] === favorites[3]) {
                 alert(`Hey, That's my favorite too!`)
@@ -55,7 +47,7 @@
         `)
 
         console.log(`
-        My Favorites
+        Your Favorites
         ------------ 
         Movie: ${uFavorites[0]}
         Song: ${uFavorites[1]}

@@ -18,5 +18,8 @@ h2 {
 }
 
 #footer{
-    background-color: black;
+    background-color: cadetblue;
+}
+#container1{
+    padding-bottom: 25px;
 }
