@@ -1,4 +1,6 @@
 # javaScript102
+## CLASS MOTO : EVEN A CAT COULD DO IT!
+![ReadMe](./photos/ReadMe.png)
 
 ## This blog post was about understanding JavaScript
 > How we did this was by going over these main concepts
@@ -15,13 +17,24 @@
 
 ## Array Page 
 
+
 ## Loops and More Page
 
 ## Favorite Game Page
+> In this section you play a game were I ask you about your favorite things and we see if they match with my favorite things. 
+
+> If our interest are the same this message will pop up
+
+![confirmed](./photos/confirm.png)
+
+> The final page should look something like this
+
+![final touch](./photos/finaltouch.png)
+
 
 ***This is what the end result should look like***
 
-![FizzBuzz](./photos/FizzBuzz.png)
+![Favorite Game](./photos/finaltouch.png)
 
 
 ## LINKS
@@ -31,3 +44,4 @@
 
 - - -
 © 2020 NPRD, Nicholas Paul Ruiz Dallas
+
