@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/favorite.css">
     <title>JS-My Favorites</title>
 </head>
+
 <body>
     <h1>Right Click on this page and go to Inspect</h1>
     <h1>Then in the Developer Tool Bar go to Console</h1>
     <h2>You will see my answers and yours</h2>
     <h1><a href="./index.html">Take Me Home</a></h1>
     <hr>
-    <div id="myFavs"></div>
+
+    <!-- METHOD ONE -->
+    <!-- This is for when you are setting an Element to its inner.HTML to be modified -->
+    <!-- <div id="myFavs"></div>
     <hr>
-    <div id="yourFavs"></div>
+    <div id="yourFavs"></div> -->
+
+    <!-- METHOD TWO -->
+    <div id="favs"></div>
 
     <script>
         // ARRAY of My Favorites
-        let favorites = ['The Mask', 'I will survive', 'skyrim', 'pizza' ]
+        let favorites = ['The Mask', 'I will survive', 'skyrim', 'pizza']
         // ARRAY of User Favorites - keep this empty
         let uFavorites = []
 
         uFavorites.push(prompt('What is your favorite movie?'))
-            if (uFavorites[0] === favorites[0]) {
-                alert(`Hey, That's my favorite too!`)
-            }
+        if (uFavorites[0] === favorites[0]) {
+            alert(`Hey, That's my favorite too!`)
+        }
 
         uFavorites.push(prompt('What is your favorite song?'))
-            if (uFavorites[1] === favorites[1]) {
-                alert(`Hey, That's my favorite too!`)
-            }
+        if (uFavorites[1] === favorites[1]) {
+            alert(`Hey, That's my favorite too!`)
+        }
 
         uFavorites.push(prompt('what is your favorite game?'))
-            if (uFavorites[2] === favorites[2]) {
-                alert(`Hey, That's my favorite too!`)
-            }
+        if (uFavorites[2] === favorites[2]) {
+            alert(`Hey, That's my favorite too!`)
+        }
 
         uFavorites.push(prompt('what is your favorite food?'))
-            if (uFavorites[3] === favorites[3]) {
-                alert(`Hey, That's my favorite too!`)
-            }
+        if (uFavorites[3] === favorites[3]) {
+            alert(`Hey, That's my favorite too!`)
+        }
 
         console.log(`
         My Favorites
@@ -62,19 +70,46 @@
         ------------
         `)
 
-        document.getElementById('myFavs').innerHTML = `
-            <p>My Favorite Movie: ${favorites[0]}</p>
-            <p>My Favorite Song: ${favorites[1]}</p>
-            <p>My Favorite Game: ${favorites[2]}</p>
-            <p>My Favorite Food: ${favorites[3]}</p>
+        // Method ONE
+        // This is how you grab an Element from the Front-End and make it compatible with JS
+        // document.getElementById('myFavs').innerHTML = `
+        //     <p>My Favorite Movie: ${favorites[0]}</p>
+        //     <p>My Favorite Song: ${favorites[1]}</p>
+        //     <p>My Favorite Game: ${favorites[2]}</p>
+        //     <p>My Favorite Food: ${favorites[3]}</p>
+        // `
+        // document.getElementById('yourFavs').innerHTML = `
+        //     <p>My Favorite Movie:${uFavorites[0]}</p>
+        //     <p>My Favorite Song: ${uFavorites[1]}</p>
+        //     <p>My Favorite Game: ${uFavorites[2]}</p>
+        //     <p>My Favorite Food: ${uFavorites[3]}</p>
+        // `
+
+        // METHOD TWO
+        // This is how you create an element to render onto the HTML using JS
+        // NOTE ** after all of this you have to append the (ELEMENT) to the "HTML PAGE"
+        let myFavsElem = document.createElement('div')
+        myFavsElem.id = 'myFavs'
+        myFavsElem.innerHTML = `
+        <p>My Favorite Movie: ${favorites[0]}</p>
+        <p>My Favorite Song: ${favorites[1]}</p>
+        <p>My Favorite Game: ${favorites[2]}</p>
+        <p>My Favorite Food: ${favorites[3]}</p>
         `
-        document.getElementById('yourFavs').innerHTML = `
-            <p>My Favorite Movie:${uFavorites[0]}</p>
-            <p>My Favorite Song: ${uFavorites[1]}</p>
-            <p>My Favorite Game: ${uFavorites[2]}</p>
-            <p>My Favorite Food: ${uFavorites[3]}</p>
+
+        let yourFavsElem = document.createElement('div')
+        yourFavsElem.id = 'yourFavs'
+        yourFavsElem.innerHTML = `
+        <p>My Favorite Movie:${uFavorites[0]}</p>
+        <p>My Favorite Song: ${uFavorites[1]}</p>
+        <p>My Favorite Game: ${uFavorites[2]}</p>
+        <p>My Favorite Food: ${uFavorites[3]}</p>
         `
+        // Appending Elements to the page
+        document.getElementById('favs').append(myFavsElem)
+        document.getElementById('favs').append(yourFavsElem)
 
     </script>
 </body>
+
 </html>
