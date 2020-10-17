@@ -11,6 +11,11 @@
     <h1>Then in the Developer Tool Bar go to Console</h1>
     <h2>You will see my answers and yours</h2>
     <h1><a href="./index.html">Take Me Home</a></h1>
+    <hr>
+    <div id="myFavs"></div>
+    <hr>
+    <div id="yourFavs"></div>
+
     <script>
         // ARRAY of My Favorites
         let favorites = ['The Mask', 'I will survive', 'skyrim', 'pizza' ]
@@ -56,6 +61,20 @@
         Food: ${uFavorites[3]}
         ------------
         `)
+
+        document.getElementById('myFavs').innerHTML = `
+            <p>My Favorite Movie: ${favorites[0]}</p>
+            <p>My Favorite Song: ${favorites[1]}</p>
+            <p>My Favorite Game: ${favorites[2]}</p>
+            <p>My Favorite Food: ${favorites[3]}</p>
+        `
+        document.getElementById('yourFavs').innerHTML = `
+            <p>My Favorite Movie:${uFavorites[0]}</p>
+            <p>My Favorite Song: ${uFavorites[1]}</p>
+            <p>My Favorite Game: ${uFavorites[2]}</p>
+            <p>My Favorite Food: ${uFavorites[3]}</p>
+        `
+
     </script>
 </body>
 </html>
