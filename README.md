@@ -44,6 +44,7 @@
 
 - [javaScript102 Link] Coming Soon!
 - [Github Repo Link](https://github.com/nicholasd-uci/javaScript102)
+- [Nicholas Dallas GitHub](https://github.com/nicholasd-uci)
 
 - - -
 © 2020 NPRD, Nicholas Paul Ruiz Dallas
