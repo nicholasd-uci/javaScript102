@@ -42,7 +42,7 @@
 
 ## LINKS
 
-- [javaScript102 Link] Coming Soon!
+- [javaScript102 Link](https://nicholasd-uci.github.io/javaScript102/)
 - [Github Repo Link](https://github.com/nicholasd-uci/javaScript102)
 - [Nicholas Dallas GitHub](https://github.com/nicholasd-uci)
 
